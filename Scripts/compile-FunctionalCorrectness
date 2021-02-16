@@ -1,0 +1,4 @@
+coqdep -f _CoqProject > .coqdeps.d
+coq_makefile -f _CoqProject -o core.make 
+
+make -f core.make

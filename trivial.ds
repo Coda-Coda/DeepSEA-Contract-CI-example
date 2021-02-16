@@ -1,0 +1,15 @@
+object signature IfDemo = {
+    const test : int -> bool
+}
+
+object Contract : IfDemo {
+    let test (n) =
+        if (n < 10) then
+            true
+        else
+            false
+}
+
+layer CONTRACT  = {
+    o = Contract
+}
