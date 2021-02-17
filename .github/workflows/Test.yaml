@@ -24,4 +24,4 @@ jobs:
       - name: nix-build
         run: nix-build
       - name: run-single-test
-        run: run-single-test
+        run: $GITHUB_WORKSPACE/run-single-test
