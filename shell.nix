@@ -9,7 +9,7 @@ pkgs.mkShell {
     ]);
 
   shellHook = ''
-    export PATH=$PATH:$PWD/result/bin/
+    export PATH=$PATH:$PWD/result/binaries/built-from-src/
     export PATH=$PATH:$PWD/Scripts/
   '';
     
