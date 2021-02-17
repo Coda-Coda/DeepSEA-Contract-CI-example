@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,5 +21,7 @@ jobs:
         with:
           name: coda-coda-deepsea-public
 
-      - name: Run a one-line script
-        run: $GITHUB_WORKSPACE/run-single-test
+      - name: nix-build
+        run: nix-build
+      - name: run-single-test
+        run: run-single-test
