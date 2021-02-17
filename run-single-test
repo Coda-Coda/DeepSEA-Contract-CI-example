@@ -8,5 +8,6 @@ nix-shell --run "
         echo \" ✅ Test Passed\"
     else
         echo \" ❌ Test FAILED\"
+        exit 1
     fi
     "
