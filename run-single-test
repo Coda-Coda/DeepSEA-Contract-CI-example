@@ -1,3 +1,4 @@
+nix-build &> nix_build.log
 nix-shell --run "
     rm -f FunctionalCorrectness.vo
     rm -f FunctionalCorrectness.glob
