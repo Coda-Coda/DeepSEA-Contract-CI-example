@@ -1,10 +1,10 @@
 with import <nixpkgs> {};
 
-let deepSEA-src = ( pkgs.fetchFromGitHub { # 1.1.2-for-Nix
+let deepSEA-src = ( pkgs.fetchFromGitHub {
     owner  = "Coda-Coda";
     repo   = "deepsea-1";
-    rev    = "a6ad4d22b14778827fc19c5606096e0d993b4501";
-    sha256 = "16wmsk6acy9mq4vqj2rkp8jmy6lhgh5jal3z78ib1phfspn4a4aw"; } );
+    rev    = "ead140097e669b0c5d529f231a393bafbaf89a85";
+    sha256 = "0qrmhif78fxwazidyg00gh5lkgjb9w30fyrx25l2422y5p4dlqs8"; } );
     # To update the sha256 run:
     # nix-prefetch-url --unpack https://github.com/Coda-Coda/deepsea-1/archive/commitHashGoesHere.tar.gz
     # Then replace sha256 = ... with the last string of characters returned by nix-prefetch-url
