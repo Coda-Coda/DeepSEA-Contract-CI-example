@@ -1,6 +1,7 @@
 The content of files in this repository is dual-licenced as MIT or GNU GPL v2 (or, at your option, any later version of the GNU GPL licence). You may choose to abide by either of those two licences (included below).
 
 The DeepSEA project (which the .nix files import) is separately licenced (not by me - Daniel Britten). Please see https://github.com/certikfoundation/deepsea or in particular https://github.com/certikfoundation/deepsea/blob/master/CompCert-LICENSE.txt for their licence.
+See also https://github.com/Coda-Coda/deepsea-1/blob/master/Selected-Files-LICENCE.txt for the licence of certain specific files in my (Daniel Britten's) fork.
 
 ------------------------------
 
