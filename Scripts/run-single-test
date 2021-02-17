@@ -1,8 +1,0 @@
-nix-build &>/dev/null
-compile-for-coq &>/dev/null
-compile-FunctionalCorrectness &>/dev/null
-if test -f "./FunctionalCorrectness.vo"; then
-    echo " ✅ Test Passed"
-else
-    echo " ❌ Test FAILED"
-fi
