@@ -1,9 +1,9 @@
-nix-build &> nix_build.log
+nix-build
 nix-shell --run "
     rm -f FunctionalCorrectness.vo
     rm -f FunctionalCorrectness.glob
-    compile-for-coq &> compile_contract.log
-    compile-FunctionalCorrectness &> compile_FunctionalCorrectness.log
+    compile-for-coq
+    compile-FunctionalCorrectness
     if test -f \"./FunctionalCorrectness.vo\"; then
         echo \" ✅ Test Passed\"
     else
