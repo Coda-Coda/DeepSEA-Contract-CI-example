@@ -2,9 +2,9 @@ rm -f FunctionalCorrectness.vo
 rm -f FunctionalCorrectness.glob
 compile-for-coq
 compile-FunctionalCorrectness
-if test -f \"./FunctionalCorrectness.vo\"; then
-    echo \" ✅ Test Passed\"
+if test -f "./FunctionalCorrectness.vo"; then
+    echo " ✅ Test Passed"
 else
-    echo \" ❌ Test FAILED\"
+    echo " ❌ Test FAILED"
     exit 1
 fi
