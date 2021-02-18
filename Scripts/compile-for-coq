@@ -20,7 +20,7 @@ then
     exit 1
 fi
 
-rm -rf "$FILENAMENOEXT"
+rm -rf "$FILENAMENOEXT" # You may want to remove this line if you do not wish the folder to be deleted on every run of `compile-for-coq` e.g. if filling in some proofs within the auto-generated files.
 dsc "$FILEBASENAME" coq
 cd "$FILENAMENOEXT"
 
