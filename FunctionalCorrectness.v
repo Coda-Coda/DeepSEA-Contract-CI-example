@@ -22,7 +22,7 @@ Theorem emptyThm : forall n d d' me b,
 Proof.
 intros.
 apply I.
-Qed.
+Admitted.
 
 Theorem emptyIshThm : forall n d d' me b,
     runStateT (Contract_test_opt n me) d = Some (b, d')
