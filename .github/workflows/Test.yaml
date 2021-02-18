@@ -23,5 +23,7 @@ jobs:
 
       - name: nix-build
         run: nix-build
-      - name: run-single-test
-        run: $GITHUB_WORKSPACE/run-single-test
+      - name: FunctionalCorrectness-compile-test
+        run: $GITHUB_WORKSPACE/FunctionalCorrectness-compile-test
+      - name: FunctionalCorrectness-no-axioms-test
+        run: nix-shell --run "no-axioms-test"

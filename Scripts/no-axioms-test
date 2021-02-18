@@ -1,0 +1,12 @@
+# Note this script does not recompile FunctionalCorrectness.v - it uses the FunctionalCorrectness.vo file assuming that it is up to date.
+rm -f axioms.log
+print-axioms &> axioms.log
+AXIOM_FILTER_STRING="    Top."
+NUMBER_OF_AXIOMS_AT_TOP_LEVEL=$(less axioms.log |& grep -c "$AXIOM_FILTER_STRING")
+if [ $NUMBER_OF_AXIOMS_AT_TOP_LEVEL == "0" ]; then
+        echo " ✅ Test Passed (no axioms at the top level)"
+    else
+        echo " ❌ Test FAILED ($NUMBER_OF_AXIOMS_AT_TOP_LEVEL axiom(s) at the top level present):"
+        less axioms.log |& grep "$AXIOM_FILTER_STRING"
+        exit 1
+fi

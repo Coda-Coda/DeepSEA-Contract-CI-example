@@ -1,0 +1,5 @@
+rm -f coqchk/FunctionalCorrectness.vo
+mkdir -p coqchk
+cp FunctionalCorrectness.vo coqchk/FunctionalCorrectness.vo
+cd coqchk
+coqchk -silent -o -norec Top.FunctionalCorrectness -R ../coqchk Top -R ../result/src DeepSpec -R ../SmartContract SmartContract
