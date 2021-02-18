@@ -13,7 +13,8 @@ After running `nix-build`.
 ## To develop or check the proof locally:
 1. `nix-build`
 2. `nix-shell`
-3. `coqide FunctionalCorrectness.v`
+3. `compile-for-coq`
+4. `coqide FunctionalCorrectness.v`
 
 ## Pre-requisites:
 
